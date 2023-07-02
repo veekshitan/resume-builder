@@ -1,0 +1,31 @@
+.auth_parent{
+    height : 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items : flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 140px;
+}
+
+.auth_parent h1{
+    font-size: 25px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+
+.auth_parent form{
+
+    width: 400px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 0 3px gray;
+    padding: 20px;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}

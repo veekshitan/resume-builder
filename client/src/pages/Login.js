@@ -34,13 +34,18 @@ export default function Login() {
   return (
     <div
       className="auth_parent"
-      style={{
-        backgroundImage:
-        'url("https://img.freepik.com/free-photo/creative-flat-lay-photo-workspace-desk_7861-978.jpg?w=740&t=st=1688061136~exp=1688061736~hmac=c7269b0af6010f06b7dcfc19bffcc2f2c689b7b68d4b7f9da619e012199daa0e")',
-      }}
     >
       {loading && <Spin size="large" />}
-      <h1 style = {{marginTop : '50px', marginBottom : '35px',fontSize: '35px'}}>Welcome to My CV Resume Builder!</h1>
+      <div className="page_container">
+    <div className="container d-flex flex-column align-items-center justify-content-center justify-items-center vh-100 default_page">
+      <div className="text-center txt_default_page" style = {{marginTop : "20vh"}}>
+        <h1>Welcome to MyCV resume builder!</h1>
+      </div>
+
+      <div className="text-center txt_default_page">
+        <h3>Create your profile and we'll populate your resume in templates of your choice!</h3>
+      </div>
+  
       <Form
         layout="vertical"
         onFinish={(values) => onLogin(values)}
@@ -81,6 +86,8 @@ export default function Login() {
           </Button>
         </div>
       </Form>
+      </div>
+    </div>
     </div>
   );
 }

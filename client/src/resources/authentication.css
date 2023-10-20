@@ -1,4 +1,4 @@
-.auth_parent{
+/* .auth_parent{
     height : 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
     background-color: rgba(255, 255, 255);
     box-shadow: 0 0 3px gray;
     padding: 20px;
-}
+} */
 
 .d_flex{
     display: flex;
@@ -29,3 +29,36 @@
     padding-top: 15px;
     padding-bottom: 20px;
 }
+
+.auth_parent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth_parent h1 {
+    font-size: 25px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+  }
+  
+  .auth_parent form {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 0 0 3px gray;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .d_flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }

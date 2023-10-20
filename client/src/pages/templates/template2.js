@@ -4,7 +4,7 @@ import "../../resources/templates.css";
 export default function Template2() {
   const user = JSON.parse(localStorage.getItem("current-user"));
   return (
-    <div className="template1-parent">
+<div className="template1-parent" style = {{backgroundColor : "white"}}>
       <div className="top" style = {{flexDirection : "column"}}>
         <h1>
           {user.firstName.toUpperCase()} {user.lastName.toUpperCase()}

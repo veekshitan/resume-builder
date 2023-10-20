@@ -34,30 +34,32 @@ export default function Profile() {
   return (
     <DefaultLayout>
       {loading && <Spin size="large" />}
-      <h2>Update Profile</h2>
+      <h2 className="tab-label">Update Profile</h2>
       <div className="profile-update-tabs">
         <Form layout="vertical" onFinish={(values) => onChange(values)} initialValues={user}>
           <Tabs
             defaultActiveKey="1"
             items={[
               {
-                label: `Personal Info`,
+                label: <span className="tab-label">Personal Info</span>,
                 key: "1",
                 children: <PersonalInfo />,
               },
               {
-                label: `Skills and education`,
+                label: <span className="tab-label">Skills and education</span>,
                 key: "2",
-                children: <SkillsEducation/>
+                children: <SkillsEducation />,
               },
               {
-                label: `Experience and projects`,
+                label: <span className="tab-label">Experience and projects</span>,
                 key: "3",
-                children: <ExperienceProject/>,
+                children: <ExperienceProject />,
               },
             ]}
           />
-          <Button htmlType = "submit"> UPDATE </Button>
+          <Button className="update-button" htmlType="submit">
+            UPDATE
+          </Button>
         </Form>
       </div>
     </DefaultLayout>

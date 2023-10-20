@@ -7,7 +7,6 @@ import  { useRef } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { Button } from 'antd'
 
-
 export default function Templates() {
     const navigate = useNavigate();
     const componentRef = useRef();
@@ -16,13 +15,13 @@ export default function Templates() {
       });
     const params = useParams()
     console.log(params)
-
+  
     const getTemplate = () => {
         switch(params.id){
             case '1' : {return <Template1 />}
             case '2' : {return <Template2 />}
         }
-
+  
     }
     return (
         <DefaultLayout>
@@ -37,4 +36,4 @@ export default function Templates() {
         </DefaultLayout>
         
     )
-};
+  }

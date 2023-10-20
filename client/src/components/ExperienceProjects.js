@@ -2,6 +2,7 @@ import React from "react";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
 import TextArea from "antd/es/input/TextArea";
+import '../index.css'
 
 export default function ExperienceProject() {
   return (
